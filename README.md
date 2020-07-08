@@ -1,5 +1,5 @@
-Webpack 테스트
+Webpack 테스트 - 웹팩 로더 적용
 
-Webpack 기본 - 번들링한 결과 자바스크립트 로딩
-
-이후 테스트의 경우 현재 master 브랜치 기준으로 새로운 브랜치 생성하여 진행
+- CSS 파일을 엔트리 포인트(app.js)에 로딩(css-loader, style-loader)
+- 파일을 로딩할 수 있도록 웹팩 로더 설정 추가(file-loader, image-loader)
+  Javascript 코드에서 BASE64 인코딩
