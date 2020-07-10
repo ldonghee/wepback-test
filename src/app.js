@@ -1,3 +1,6 @@
-import * as math from './math.js'
+import MainController from "./controllers/MainController.js";
+import "./main.css";
 
-console.log(math.sum(3, 5));
+document.addEventListener("DOMContentLoaded", () => {
+    new MainController();
+});

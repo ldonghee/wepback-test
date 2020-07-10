@@ -10,4 +10,22 @@ module.exports = {
     filename: "[name].js",
     path: path.resolve("./dist"),
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(jpg|png)$/,
+        loader: "url-loader",
+        options: {
+          name: "[name].[ext]?[hash]",
+          publicPath: "./dist",
+          limit: 7000, // 10KB 미만은 URL-LOADER 그 이상은 FILE-LOAER 처리
+        },
+      },
+    ],
+  },
 };
+
